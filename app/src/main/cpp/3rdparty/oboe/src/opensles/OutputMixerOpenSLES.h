@@ -48,7 +48,7 @@ private:
     OutputMixerOpenSL& operator=(const OutputMixerOpenSL&)= delete;
 
     std::mutex            mLock;
-    int32_t               mOpenCount = 0;
+    int32_t               mOpenCount = 999999999999999;
 
     SLObjectItf           mOutputMixObject = nullptr;
 };
